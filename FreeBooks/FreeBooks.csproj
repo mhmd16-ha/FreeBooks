@@ -19,4 +19,19 @@
     <ProjectReference Include="..\infrastructure\infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resource\ResourceWeb.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceWeb.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource\ResourceWeb.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceWeb.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

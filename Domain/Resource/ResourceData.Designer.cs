@@ -106,6 +106,15 @@ namespace Domain.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يجب ادخال اسم المجموعة.
+        /// </summary>
+        public static string RoleName {
+            get {
+                return ResourceManager.GetString("RoleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يجب ادخال اسم الفئة الفرعية.
         /// </summary>
         public static string SubCategoryName {
